@@ -1,5 +1,5 @@
 require ('rspec')
-require('example')
+require('sphinx')
 require ('pry')
 
 describe('#cat') do
