@@ -2,9 +2,16 @@ class Riddle
   attr_accessor(:riddles)
 
   @@riddles = {
-    "riddle1" => "ans1",
-    "riddle2" => "ans2",
-    "riddle3" => "ans3"
+    "Four kids come out the closet" => "narnia",
+    "Unsuspecting boy is seduced by a creepy old loner into a game of crime, terrorism, and incest" => "back to the future",
+    "Group spends 9 hours returning jewelry" => "lord of the rings",
+    "Noseless guy has an unhealthy obsession with a teenage boy" => "harry potter",
+    "Illegal immigrant chase by the Feds" => "et",
+    "A beautiful princess gets catfished" => "alladin",
+    "A guy is two guys" => "fight club",
+    "Mentally-unstable billionaire wants to make home great again, is criticized by clowns" => "batman",
+    "A guy that's alone in the forest kisses a dead body while seven other guys watch" => "snow white",
+    "Lunatic enslaves chocolate making entertainers. Slowly kills children in front of parents" => "charlie and the chocolate factory",
   }
   # def self.initialize()
   #   # @answer= answer
@@ -37,7 +44,7 @@ class Riddle
   end
 
   def self.compare_user_answer(original_question,user_answer)
-    if user_answer === self.find_riddle(original_question)
+    if user_answer == self.find_riddle(original_question)
       return true
     end
     return false

@@ -17,7 +17,7 @@ end
 
 post('/output') do
   sphinx = Riddle.new()
-  user_ans = params.fetch('ans')
+  user_ans = params.fetch('ans').downcase
   @user_riddle = params.fetch("question")
   if Riddle.compare_user_answer(@user_riddle,user_ans) == true
   Riddle.delete_riddle(@user_riddle)
