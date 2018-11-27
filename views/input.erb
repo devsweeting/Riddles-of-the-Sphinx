@@ -1,0 +1,11 @@
+
+  <h2><%= @user_riddle %></h2>
+
+  <form action='/output' method="post">
+  <div class="form-group">
+     <label for="ans">Answer the riddle</label>
+     <input id="ans" name="ans" class="form-control" type="text">
+     <input type="hidden" name="question" id="question" value="<%= @user_riddle %>">
+  </div>
+  <button type="submit">Submit</button>
+</form>

@@ -11,7 +11,7 @@ class Riddle
     }
   end
 
-
+sphinx = Riddle.new()
 
   def add_new_riddle(riddle, answer) ##Adds a new question-answer pair in hash
     @riddles.store(riddle, answer)
@@ -35,7 +35,16 @@ class Riddle
     items[rand(items.length)]
   end
 
-  def ask_user_riddle()
+  def compare_user_answer(original_question,user_answer)
+    if user_answer == @riddles.find_riddle(original_question)
+      return true
+    end
+    return false
+  end
+
+
+
+  def ask_user_riddle_testing()
     if @riddles != {}
       temp_question = self.random_key
       actual_answer = self.find_riddle(temp_question)
@@ -53,5 +62,3 @@ class Riddle
     end
   end
 end
-
-sphinx = Riddle.new()
