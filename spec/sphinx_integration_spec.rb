@@ -1,17 +1,23 @@
-# require('sphinx')
-# require('capybara/rspec')
-# require('./app')
-#
-# Capybara.app = Sinatra::Application
-# set(:show_exceptions, false)
-#
-# describe('the triangle path', {:type => :feature}) do
-#   it('processes the user entry and returns what type of triangle it is') do
-#     visit('/input')
-#     fill_in('sideA', :with => '1')
-#     fill_in('sideB', :with => '1')
-#     fill_in('sideC', :with => '2')
-#     click_button('Submit')
-#     expect(page).to have_content('not a triangle')
-#   end
-# end
+require('sphinx')
+require('capybara/rspec')
+require('./app')
+
+Capybara.app = Sinatra::Application
+set(:show_exceptions, false)
+
+describe('the sphinx game', {:type => :feature}) do
+  it('user guesses what the movie is') do
+    visit('/')
+    fill_in('ans', :with => 'batman')
+    click_button('Next Riddle')
+    expect(page).to have_content('You Solved the Riddle')
+  end
+
+  # it('user guesses what the movie is') do
+  #   visit('/')
+  #   fill_in('ans', :with => 'batman')
+  #   click_button('Next Riddle')
+  #   expect(page).to have_content('This is the failure page')
+  # end
+
+end

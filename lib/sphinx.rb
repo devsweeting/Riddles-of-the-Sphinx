@@ -6,12 +6,12 @@ class Riddle
     "Unsuspecting boy is seduced by a creepy old loner into a game of crime, terrorism, and incest" => "back to the future",
     "Group spends 9 hours returning jewelry" => "lord of the rings",
     "Noseless guy has an unhealthy obsession with a teenage boy" => "harry potter",
-    "Illegal immigrant chase by the Feds" => "et",
+    "Illegal immigrant chase by the Feds" => "e.t.",
     "A beautiful princess gets catfished" => "alladin",
     "A guy is two guys" => "fight club",
     "Mentally-unstable billionaire wants to make home great again, is criticized by clowns" => "batman",
     "A guy that's alone in the forest kisses a dead body while seven other guys watch" => "snow white",
-    "Lunatic enslaves chocolate making entertainers. Slowly kills children in front of parents" => "charlie and the chocolate factory",
+    "Lunatic enslaves chocolate making entertainers. Slowly kills children in front of parents" => "willa wonka and the chocolate factory",
   }
   # def self.initialize()
   #   # @answer= answer

@@ -23,7 +23,7 @@ post('/output') do
   Riddle.delete_riddle(@user_riddle)
   erb(:output)
   else
-  Riddle.delete_riddle(@user_riddle)
   erb(:failure)
+  Riddle.delete_riddle(@user_riddle)
   end
 end
